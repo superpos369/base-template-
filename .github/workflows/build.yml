@@ -4,11 +4,14 @@ on:
     branches: [ main, master ]
 
 env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # <-- Workflow-Top-Level = endgültig fix
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # Workflow-Level
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # Job-Level (doppelt abgesichert)
+
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
