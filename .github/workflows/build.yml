@@ -2,11 +2,13 @@ name: Build APK
 on:
   push:
     branches: [ main, master ]
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # <-- killt die Node-20-Warning endgültig
+
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
