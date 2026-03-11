@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "4971746987",
+    "project_id": "wonder-wanda",
+    "storage_bucket": "wonder-wanda.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4971746987:android:584910251c6c1e504989ee",
+        "android_client_info": {
+          "package_name": "com.appfabrik.wonder_wanda"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOuTZ8uPN5Umo1Dlc9WbeL-tcyyUz13Ag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
